@@ -65,3 +65,19 @@
       display: flex;
       justify-content: space-between;
     }
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    background: rgba(15, 23, 42, 0.95);
+    height: calc(100vh - 60px);
+    width: 220px;
+    flex-direction: column;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform var(--transition-speed);
+  }
+
+}
